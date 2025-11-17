@@ -12,8 +12,12 @@
     pip install .
     
     pip install scgpt
+
+torch와 torchtext 버전 충돌로 torch 버전 낮춤
     
     pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cu121 "torch==2.3.0" "torchvision==0.18.0" "torchaudio==2.3.0"
+
+torchtext 설치 시 torch가 최신 버전으로 업데이트 되어 --no-deps 적용
     
     pip install --no-cache-dir --no-deps "torchtext==0.18.0"
     
