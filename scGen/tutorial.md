@@ -1,3 +1,5 @@
+
+
     ---------------------------------------------------------------------------
     AttributeError                            Traceback (most recent call last)
     Cell In[16], line 1
@@ -18,3 +20,6 @@
         349     qz_means.append(qzm.cpu())
     
     AttributeError: 'NoneType' object has no attribute 'sqrt'
+
+scgen/_scgenvae.py 파일 수정
+https://github.com/theislab/scgen/pull/104/commits/682136b0cd0ea28a09912bcc4aa60acdca4dfe89
