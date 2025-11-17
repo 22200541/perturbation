@@ -1,5 +1,11 @@
+## LSF job
+    bsub -J "scgen" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=1" -Is bash
 
-
+## 수정 사항
+#### latent_X AttributeError
+    latent_X = model.get_latent_representation()
+    latent_adata = sc.AnnData(X=latent_X, obs=train_new.obs.copy())  
+  
     ---------------------------------------------------------------------------
     AttributeError                            Traceback (most recent call last)
     Cell In[16], line 1
@@ -21,5 +27,5 @@
     
     AttributeError: 'NoneType' object has no attribute 'sqrt'
 
-scgen/_scgenvae.py 파일 수정
+scgen/_scgenvae.py 파일 수정  
 https://github.com/theislab/scgen/pull/104/commits/682136b0cd0ea28a09912bcc4aa60acdca4dfe89
