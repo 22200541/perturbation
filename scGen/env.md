@@ -26,3 +26,8 @@ Location: /home/c22200541/miniconda3/envs/scgen/lib/python3.11/site-packages
 Requires: adjustText, anndata, matplotlib, scanpy, scvi-tools, seaborn
 Required-by:  
 </code></pre>
+
+torch: 2.9.0+cu128
+numpy: 2.3.4  
+scanpy: 1.11.5  
+scvi-tools: 1.4.0.post1
