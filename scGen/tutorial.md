@@ -1,0 +1,31 @@
+## LSF job
+    bsub -J "scgen" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=1" -Is bash
+
+## 수정 사항
+#### latent_X AttributeError
+    latent_X = model.get_latent_representation()
+    latent_adata = sc.AnnData(X=latent_X, obs=train_new.obs.copy())  
+  
+    ---------------------------------------------------------------------------
+    AttributeError                            Traceback (most recent call last)
+    Cell In[16], line 1
+    ----> 1 latent_X = model.get_latent_representation()
+          2 latent_adata = sc.AnnData(X=latent_X, obs=train_new.obs.copy())
+    
+    File ~/miniconda3/envs/scgen/lib/python3.11/site-packages/torch/utils/_contextlib.py:120, in context_decorator.<locals>.decorate_context(*args, **kwargs)
+        117 @functools.wraps(func)
+        118 def decorate_context(*args, **kwargs):
+        119     with ctx_factory():
+    --> 120         return func(*args, **kwargs)
+    
+    File ~/miniconda3/envs/scgen/lib/python3.11/site-packages/scvi/model/base/_vaemixin.py:346, in VAEMixin.get_latent_representation(self, adata, indices, give_mean, mc_samples, batch_size, return_dist, dataloader, **data_loader_kwargs)
+        344     qzm: Tensor = outputs.get(MODULE_KEYS.QZM_KEY)
+        345     qzv: Tensor = outputs.get(MODULE_KEYS.QZV_KEY)
+    --> 346     qz: Distribution = Normal(qzm, qzv.sqrt())
+        348 if return_dist:
+        349     qz_means.append(qzm.cpu())
+    
+    AttributeError: 'NoneType' object has no attribute 'sqrt'
+
+scgen/_scgenvae.py 파일 수정  
+https://github.com/theislab/scgen/pull/104/commits/682136b0cd0ea28a09912bcc4aa60acdca4dfe89
