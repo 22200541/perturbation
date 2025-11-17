@@ -1,9 +1,9 @@
 ## LSF job
     bsub -J "scgpt" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=1" -Is bash
 
+## 수정 사항
 - 실행시간 단축을 위해 epochs 15에서 5로 줄여서 실행  
 
-## Error
 #### key error
     
     RuntimeError: Error(s) in loading state_dict for TransformerGenerator: Unexpected key(s) in state_dict: "transformer_encoder.layers.0.self_attn.Wqkv.weight", "transformer_encoder.layers.0.self_attn.Wqkv.bias",
