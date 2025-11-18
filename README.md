@@ -22,11 +22,11 @@
    https://github.com/snap-stanford/GEARS/blob/master/demo/model_tutorial.ipynb
 
 ### 벤치마킹 
-1. A systematic comparison of single-cell perturbation response prediction models (Li, L. et al., 2024)
+1. A systematic comparison of single-cell perturbation response prediction models (Li, L. et al., 2024)  
    https://doi.org/10.1101/2024.12.23.630036
-3. Benchmarking AI models for in silico gene perturbation of cells (Li, C. et al., 2024)
+3. Benchmarking AI models for in silico gene perturbation of cells (Li, C. et al., 2024)  
    https://doi.org/10.1101/2024.12.20.629581
-5. Perteval-scfm: benchmarking single-cell foundation models for perturbation effect prediction (Wenteler, A. et al., 2024)
+5. Perteval-scfm: benchmarking single-cell foundation models for perturbation effect prediction (Wenteler, A. et al., 2024)  
    https://doi.org/10.1101/2024.10.02.616248
-7. Benchmarking foundation cell models for post-perturbation RNA-seq prediction (Csendes, G. et al., 2025)
+7. Benchmarking foundation cell models for post-perturbation RNA-seq prediction (Csendes, G. et al., 2025)  
    https://doi.org/10.1186/s12864-025-11600-2
