@@ -1,5 +1,5 @@
 # Setup
-2025-11-11  
+Date: 2025-11-11  
 ## HGU HPC
     conda create -n scgpt python=3.11 pip
     
