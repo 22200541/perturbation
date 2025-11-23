@@ -1,5 +1,5 @@
 ## LSF job
-    bsub -J "scgpt" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=1" -Is bash
+    bsub -J "scgpt" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=2" -Is bash
 
 ## 수정 사항
 - 실행시간 단축을 위해 epochs 15에서 5로 줄여서 실행  
@@ -10,28 +10,21 @@
 
 수정 전 코드
 
-    pretrained_dict = {
-        k: v
-        for k, v in pretrained_dict.items()
-        if any([k.startswith(prefix) for prefix in load_param_prefixs])
-    }
+    load_param_prefixs = [
+        "encoder",
+        "value_encoder",
+        "transformer_encoder",
+    ]
 
 수정 후 코드
 
-    pretrained_dict = {
-        k: v
-        for k, v in pretrained_raw.items()
-        if any([k.startswith(prefix) for prefix in load_param_prefixs])
-           and k in model_dict
-           and v.shape == model_dict[k].shape
-    }
+    load_param_prefixs = None  
 
 #### training loop 실행 시 OOM
 
     OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB. GPU
   
-batch_size를 64에서 16으로 줄임   
-test loop에서도 동일한 문제가 발생하여 batch_size를 1로 줄임  
+batch_size를 64에서 32로 줄임   
 
 #### np.float 에러
 
