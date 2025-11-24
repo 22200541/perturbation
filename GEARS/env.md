@@ -1,19 +1,24 @@
 # Setup
-Date: 2025-11-23 
+Date: 2025-11-23  
 ## HGU HPC
-    conda create -n scfoundation python=3.11 pip
+    conda create -n gears python=3.11 pip
+    
+    conda activate gears
     
     conda install jupyter
+    
+    cd GEARS/
+    
+    pip install .
+    
+    pip uninstall -y torch
 
     pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
-    
-    pip install argparse numpy pandas scipy einops scanpy local_attention
-    
-    pip install torch_geometric
     
     pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.8.0+cu128.html
     
     pip install cell-gears
+
 
 ***
     pip show cell-gears
