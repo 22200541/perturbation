@@ -9,4 +9,4 @@
     aws s3 cp --no-sign-request s3://czi-scgenept-public/models/gene_embeddings/GO_C_gene_embeddings-gpt3.5-ada-concat.pickle scGenePT/models/gene_embeddings/
 
 ## Training
-    python train.py --model-type=scgenept_go_c_gpt --num-epochs=20 --dataset=norman --device=cuda:0
+    python train.py --model-type=go_c_gpt_concat --num-epochs=20 --dataset=norman --device=cuda:0
