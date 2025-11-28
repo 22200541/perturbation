@@ -1,0 +1,36 @@
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/scanpy/_utils/__init__.py:27: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  from anndata import __version__ as anndata_version
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_csv from `anndata` is deprecated. Import anndata.io.read_csv instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_excel from `anndata` is deprecated. Import anndata.io.read_excel instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_hdf from `anndata` is deprecated. Import anndata.io.read_hdf instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_loom from `anndata` is deprecated. Import anndata.io.read_loom instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_mtx from `anndata` is deprecated. Import anndata.io.read_mtx instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_text from `anndata` is deprecated. Import anndata.io.read_text instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/anndata/__init__.py:70: FutureWarning: Importing read_umi_tools from `anndata` is deprecated. Import anndata.io.read_umi_tools instead.
+  return module_get_attr_redirect(attr_name, deprecated_mapping=_DEPRECATED)
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.33' not found (required by /home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/libpyg.so)
+  import torch_geometric.typing
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-scatter'. Disabling its usage. Stacktrace: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by /home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_scatter/_version_cuda.so)
+  import torch_geometric.typing
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-cluster'. Disabling its usage. Stacktrace: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by /home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_cluster/_version_cuda.so)
+  import torch_geometric.typing
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-spline-conv'. Disabling its usage. Stacktrace: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by /home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_spline_conv/_version_cuda.so)
+  import torch_geometric.typing
+/home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_geometric/__init__.py:4: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.32' not found (required by /home/c22200541/miniconda3/envs/scfoundation/lib/python3.11/site-packages/torch_sparse/_version_cuda.so)
+  import torch_geometric.typing
+Traceback (most recent call last):
+  File "/home/c22200541/scFoundation/GEARS/train.py", line 8, in <module>
+    from gears import PertData, GEARS
+  File "/home/c22200541/scFoundation/GEARS/gears/__init__.py", line 1, in <module>
+    from .gears import GEARS
+  File "/home/c22200541/scFoundation/GEARS/gears/gears.py", line 18, in <module>
+    from .utils import loss_fct, uncertainty_loss_fct, parse_any_pert, \
+  File "/home/c22200541/scFoundation/GEARS/gears/utils.py", line 16, in <module>
+    from dcor import distance_correlation, partial_distance_correlation
+ModuleNotFoundError: No module named 'dcor'
