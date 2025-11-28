@@ -31,3 +31,15 @@ torchtext 설치 시 torch가 최신 버전으로 업데이트 되어 --no-deps 
 
 ***
     pip show scgpt
+<pre><code> 
+Name: scgpt
+Version: 0.2.4
+Summary: Large-scale generative pretrain of single cell using transformer.
+Home-page: https://github.com/bowang-lab/scGPT
+Author: Haotian
+Author-email: subercui@gmail.com
+License: MIT
+Location: /home/c22200541/miniconda3/envs/scgenept/lib/python3.10/site-packages
+Requires: cell-gears, datasets, leidenalg, numba, orbax, pandas, scanpy, scib, scikit-misc, scvi-tools, torch, torchtext, typing-extensions, umap-learn
+Required-by:  
+</code></pre>
