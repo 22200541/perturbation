@@ -27,8 +27,6 @@ torchtext 설치 시 torch가 최신 버전으로 업데이트 되어 --no-deps 
     
     pip install --no-cache-dir --no-deps "torchtext==0.18.0"
     
-    pip install torch_geometric
-
     pip install ipykernel
 
 ***
