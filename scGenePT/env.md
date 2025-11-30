@@ -11,8 +11,8 @@ Date: 2025-11-27
     
     pip install -r requirements.txt
 
-torch 2.1.2+cu121
-pip install flash-attn --no-build-isolation
+torch 2.1.2+cu121  
+pip install flash-attn --no-build-isolation  
 위 코드로 설치 안 돼서 아래 코드로 설치
 
     pip install flash-attn==1.0.4 --no-build-isolation
