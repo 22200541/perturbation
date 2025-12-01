@@ -1,5 +1,5 @@
 ## LSF job
-    bsub -J "scgpt" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=2" -Is bash
+    bsub -J "scgenept" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=2" -Is bash
 
 ## Data download
 #### Download pretrained scGPT model
@@ -10,3 +10,5 @@
 
 ## Training
     python train.py --model-type=go_c_gpt_concat --num-epochs=20 --dataset=norman --device=cuda:0
+
+    torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 
