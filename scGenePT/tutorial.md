@@ -11,8 +11,3 @@
 #### Download finetuned scGenePT model
     aws s3 sync --no-sign-request s3://czi-scgenept-public/models/finetuned/scgenept_go_c scGenePT/models/finetuned/scgenept_go_c
 
-
-## Training
-    python train.py --model-type=go_c_gpt_concat --num-epochs=20 --dataset=norman --device=cuda:0
-
-    torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 
