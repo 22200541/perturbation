@@ -12,6 +12,10 @@ Date: 2025-11-11
     pip install .
     
     pip install scgen
+
+systema 사용을 위한 패키지
+
+    pip install gseapy
 ***
     pip show scgen
 <pre><code> 
