@@ -16,6 +16,7 @@ Date: 2025-11-11
 systema 사용을 위한 패키지
 
     pip install gseapy
+    pip install plottable
 ***
     pip show scgen
 <pre><code> 
