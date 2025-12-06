@@ -20,6 +20,10 @@
    Predicting transcriptional outcomes of novel multigene perturbations with GEARS (Roohani, Y. et al., 2024)  
    https://doi.org/10.1038/s41587-023-01905-6  
    https://github.com/snap-stanford/GEARS/blob/master/demo/model_tutorial.ipynb
+8. Geneformer
+   Transfer learning enables predictions in network biology (Theodoris, C.V. et al., 2023) 
+   https://doi.org/10.1038/s41586-023-06139-9
+   https://huggingface.co/ctheodoris/Geneformer
 
 ### 벤치마킹 
 1. A systematic comparison of single-cell perturbation response prediction models (Li, L. et al., 2024)  
