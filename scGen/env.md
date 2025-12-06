@@ -22,6 +22,7 @@ GEARS에서 Norman data를 사용하기 위한 패키지
 systema 사용을 위한 패키지
 
     pip install gseapy
+    
     pip install plottable
 ***
     pip show scgen
