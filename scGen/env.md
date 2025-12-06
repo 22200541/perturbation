@@ -13,6 +13,12 @@ Date: 2025-11-11
     
     pip install scgen
 
+GEARS에서 Norman data를 사용하기 위한 패키지
+
+    pip install cell-gears
+
+    pip install torch_geometric
+
 systema 사용을 위한 패키지
 
     pip install gseapy
