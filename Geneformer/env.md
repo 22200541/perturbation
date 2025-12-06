@@ -10,6 +10,8 @@ Date: 2025-12-05
     cd Geneformer/
     
     pip install .
+
+    pip install pandas
     
 GEARS의 Norman data를 사용하기 위한 패키지
 
