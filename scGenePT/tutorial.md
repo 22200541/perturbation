@@ -13,6 +13,8 @@
     bsub -J "scgenept" -Is -W 24:00 -q normal -gpu "num=1:mode=exclusive_process:mig=2" -n 4 -R "rusage[mem=10000]" bash
 
 ### Run
+batch size 16으로 낮춤
+
     python train.py --model-type=scgenept_ncbi+uniprot_gpt --num-epochs=20 --dataset=norman --device=cuda:0 \
         --batch-size 16 --eval-batch-size 16
 
