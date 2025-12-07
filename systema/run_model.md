@@ -2,5 +2,5 @@
     
     conda activate scgen
     
-    python src/run_scgen.py
+    python systema/src/run_scgen.py
 
