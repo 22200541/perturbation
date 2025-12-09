@@ -2,7 +2,7 @@
     bsub -J "scgpt" -W 24:00 -q jupyter_gpu -gpu "num=1:mode=exclusive_process:mig=2" -Is bash
 
 ## 수정 사항
-- 실행시간 단축을 위해 epochs 15에서 5로 줄여서 실행
+- 실행시간 단축을 위해 epochs 15에서 10으로 줄여서 실행
 - data_name = "norman" 
 
 #### key error
