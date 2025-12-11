@@ -1,3 +1,6 @@
+import os
+os.environ["NUMBA_CACHE_DIR"] = "/home/c22200541/.numba_scgen_clean"
+
 import os.path
 
 from gears import PertData, GEARS
@@ -27,7 +30,6 @@ parser.add_argument('--lr', default=1e-3, type=int)
 parser.add_argument("--load_model", action="store_true")
 parser.set_defaults(load_model=False)
 parser.add_argument("--early_stop", default=25, type=int)
-parser.add_argument("--perturbed", default="SAMD1+ZBTB1")
 
 args = parser.parse_args()
 
@@ -96,8 +98,7 @@ if __name__ == '__main__':
 
         # Select adata condition
         adata_condition = test_adata[test_adata.obs['condition'] == condition]
-        X_post = np.array(adata_condition.X.mean(axis=0))[
-            0]  # adata_condition.X.mean(axis=0) is a np.matrix of shape (1, n_genes)
+        X_post = np.array(adata_condition.X.mean(axis=0))[0]  # adata_condition.X.mean(axis=0) is a np.matrix of shape (1, n_genes)
 
         # Store number of train perturbations
         n_train = 0
@@ -112,11 +113,13 @@ if __name__ == '__main__':
         #scgen_pred = list(scgen_model.predict([gene_list]).values())[0]
         pred_adata, delta_adata = scgen_model.predict(
             ctrl_key = "ctrl",
-            stim_key = args.perturbed,           
-            celltype_to_predict = "A549"  
+            stim_key = condition,           
+            adata_to_predict=test_adata 
         )
+        
         # 예측된 세포들의 평균 발현 벡터
-        scgen_pred = np.array(pred_adata.X.mean(axis=0))[0]
+        #scgen_pred = np.array(pred_adata.X.mean(axis=0))[0]
+        scgen_pred = np.asarray(pred_adata.X.mean(axis=0)).ravel()
         post_gt_df.loc[len(post_gt_df)] = X_post
         post_pred_df.loc[len(post_pred_df)] = scgen_pred
 

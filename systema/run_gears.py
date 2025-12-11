@@ -1,3 +1,6 @@
+import os
+os.environ["NUMBA_CACHE_DIR"] = "/home/c22200541/.numba_gears_clean"
+
 import os.path
 
 from gears import PertData, GEARS
@@ -73,8 +76,7 @@ if __name__ == '__main__':
 
         # Select adata condition
         adata_condition = test_adata[test_adata.obs['condition'] == condition]
-        X_post = np.array(adata_condition.X.mean(axis=0))[
-            0]  # adata_condition.X.mean(axis=0) is a np.matrix of shape (1, n_genes)
+        X_post = np.array(adata_condition.X.mean(axis=0))[0]  # adata_condition.X.mean(axis=0) is a np.matrix of shape (1, n_genes)
 
         # Store number of train perturbations
         n_train = 0
