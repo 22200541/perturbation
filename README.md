@@ -12,25 +12,17 @@
    scGenePT: Is language all you need for modeling single-cell perturbations? (Istrate, A. M. et al., 2024)  
    https://doi.org/10.1101/2024.10.23.619972  
    https://github.com/czi-ai/scGenePT/blob/main/tutorials/scgenept_tutorial.ipynb
-5. scFoundation  
-   Large-scale foundation model on single-cell transcriptomics (Hao, M. et al., 2024)  
-   https://doi.org/10.1038/s41592-024-02305-7  
-   https://github.com/biomap-research/scFoundation/tree/main/GEARS
-7. GEARS  
+5. GEARS  
    Predicting transcriptional outcomes of novel multigene perturbations with GEARS (Roohani, Y. et al., 2024)  
    https://doi.org/10.1038/s41587-023-01905-6  
    https://github.com/snap-stanford/GEARS/blob/master/demo/model_tutorial.ipynb
-8. Geneformer  
-   Transfer learning enables predictions in network biology (Theodoris, C.V. et al., 2023)   
-   https://doi.org/10.1038/s41586-023-06139-9  
-   https://huggingface.co/ctheodoris/Geneformer  
 
 ### 벤치마킹 
 1. A systematic comparison of single-cell perturbation response prediction models (Li, L. et al., 2024)  
    https://doi.org/10.1101/2024.12.23.630036
-3. Benchmarking AI models for in silico gene perturbation of cells (Li, C. et al., 2024)  
+2. Benchmarking AI models for in silico gene perturbation of cells (Li, C. et al., 2024)  
    https://doi.org/10.1101/2024.12.20.629581
-5. Perteval-scfm: benchmarking single-cell foundation models for perturbation effect prediction (Wenteler, A. et al., 2024)  
+3. Perteval-scfm: benchmarking single-cell foundation models for perturbation effect prediction (Wenteler, A. et al., 2024)  
    https://doi.org/10.1101/2024.10.02.616248
-7. Benchmarking foundation cell models for post-perturbation RNA-seq prediction (Csendes, G. et al., 2025)  
+4. Benchmarking foundation cell models for post-perturbation RNA-seq prediction (Csendes, G. et al., 2025)  
    https://doi.org/10.1186/s12864-025-11600-2
